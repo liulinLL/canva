@@ -1,0 +1,86 @@
+#Canvas{
+
+    background:#FFFFFF;
+    display: block;
+    /* width: 300em;
+    height: 300em; */
+}
+
+ul,ol{
+list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
+
+
+body{
+    overflow: hidden;
+    margin: 0px;
+}
+
+.actions{
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.actions svg {
+
+    width: 25px;
+    height: 25px;
+    transition: all 0.3s;
+
+}
+.actions svg.active {
+
+   fill: red;
+   transform: scale(1.2);
+  
+}
+.colour{
+    position: fixed;
+    top: 35px;
+    left: 15px;
+    /* border: 1px solid red; */
+}
+ol li{
+    width: 12px;
+    height: 12px;
+    /* border: 1px solid black; */
+    margin: 5px 0;
+    border-radius: 50%;
+}
+.colour .black{
+    background: black;
+}
+.colour .red {
+    background: red;
+}
+.colour .green {
+    background: green;
+}
+.colour .blue {
+    background: blue;
+}
+.colour li{
+
+    transition: all 0.3s;
+}
+
+.colour li.profiler{
+    transform: scale(1.2);
+    
+
+}
+
+
+
