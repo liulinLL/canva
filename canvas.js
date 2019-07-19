@@ -3,6 +3,7 @@
 var canvas = document.getElementById("Canvas");
 var ctx = canvas.getContext('2d');
 var flag = false;
+ctx.lineWidth = 5;
 drawSize();//初始化画布面积
 window.onresize = function () {
     drawSize();//使画布能适应窗口变换
@@ -138,7 +139,7 @@ else {
 // 画线
 function drawLine(x1, y1, x2, y2) {
     ctx.beginPath();
-    ctx.lineWidth = 10;
+  
     ctx.moveTo(x1, y1)
 
     ctx.lineTo(x2, y2)
@@ -148,8 +149,8 @@ function drawLine(x1, y1, x2, y2) {
 }
 // 设置画布
 function drawSize() {
-    var pageWidth = document.documentElement.clientWidth
-    var pageHeight = document.documentElement.clientHeight
+    var pageWidth = document.documentElement.clientWidth;
+    var pageHeight = document.documentElement.clientHeight;
     canvas.width = pageWidth;
     canvas.height = pageHeight;
 }
@@ -206,6 +207,31 @@ blue.onclick=function(){
     black.classList.remove("profiler");
     ctx.strokeStyle='blue';
     
+}
+thin.onclick=function(){
+    ctx.lineWidth=10
+    thin.classList.add('change');
+    think.classList.remove('change');
+    
+
+}
+think.onclick=function(){
+    ctx.lineWidth=20
+    think.classList.add('change');
+    thin.classList.remove('change');
+    
+}
+clear.onclick=function(){
+    ctx.clearRect(0,0,canvas.width,canvas.height)
+}
+download.onclick=function(){
+    var url=canvas.toDataURL("./image/png")
+    var a=document.createElement('a')
+    document.body.appendChild(a)
+    a.href=url
+    a.download='xxx'
+    a.click()
+
 }
 
 

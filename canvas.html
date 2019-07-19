@@ -7,6 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>简易画板</title>
     <link rel="stylesheet" href="./canvas.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/popper.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	
 </head>
 
 
@@ -17,22 +22,58 @@
             <svg class="icon-pen active" id="pen" aria-hidden="true">
                 <use xlink:href="#icon-pen"></use>
             </svg>
+
             <svg class="icon-eraser" id="eraser" aria-hidden="true">
                 <use xlink:href="#icon-eraser"></use>
-            </svg>        
+            </svg>
+
+            <svg class="clear" id="clear" aria-hidden="true">
+                    <use xlink:href="#icon-qingchu"></use>
+            </svg>
+
+            <svg class="save" id="save" aria-hidden="true">
+                    <use xlink:href="#icon-baocun"></use>
+            </svg>
+
+            <svg class="download" id="download" aria-hidden="true">
+                    <use xlink:href="#icon-xiazai"></use>
+            </svg>
+
     </div>
+    <!-- <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                       
+                        <span class="caret"></span>
+                        <svg class="icon-xianduan" id="xianduan" aria-hidden="true" width=25 height=25>
+                                <use xlink:href="#icon-xianduan"></use>     
+                        </svg>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                      </ul>
+                             
+            
+    </div> -->
+
+
     <ol class="colour">
             <li class="black profiler" id="black"></li>
             <li class="red" id="red"></li>
             <li class="green" id="green"></li>
             <li class="blue" id="blue"></li>
-        </ol>
+    </ol>
+
+    <ol class="line">
+        <li class="thin" id="thin"></li>
+        <li class="think" id="think"></li>
+    </ol>
 
 </body>
 
 
 <script src="./canvas.js"></script>
-<script src="//at.alicdn.com/t/font_1303932_gsz7o9a210l.js"></script>
+<script src="//at.alicdn.com/t/font_1303932_0in6mx7mejub.js"></script>
 
 
 

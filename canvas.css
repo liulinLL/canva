@@ -1,7 +1,8 @@
 #Canvas{
-
-    background:#FFFFFF;
+   
+    background:#ffffff;
     display: block;
+    margin: auto auto;
     /* width: 300em;
     height: 300em; */
 }
@@ -50,9 +51,10 @@ body{
     position: fixed;
     top: 35px;
     left: 15px;
+    
     /* border: 1px solid red; */
 }
-ol li{
+.colour li{
     width: 12px;
     height: 12px;
     /* border: 1px solid black; */
@@ -81,6 +83,51 @@ ol li{
     
 
 }
+ /* .dropdown {
+    position:fixed;
+    top:-808px;
+    left:72px;
+}  
+button {
+    display: block;
+    width: 49px;
+    height: 27px;
+    margin: 0;
+    padding: 0;
+    overflow:visible;
+    box-sizing: content-box;
+    border: 1px solid transparent; 
+
+} 
+ */
+
+ .line {
+     position: fixed;
+     top: 0;
+     left: 180px;
+     
+ }
+ .line li {
+    transition: all 0.3s;
+    margin: 10px 0;
+
+ }
+ 
+ .line >.thin{
+     width: 30px;
+     height: 0;
+     border-top: 5px solid black;
+   
+ }
+ .line>.think{
+    width: 30px;
+    height: 0;
+    border-top: 10px solid black;
+ }
+
+ .line li.change{
+    transform: scale(1.2);
+ }
 
 
 
